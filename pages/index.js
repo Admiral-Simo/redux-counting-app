@@ -11,7 +11,7 @@ import AddAmount from "../components/addamount";
 import Image from "next/image";
 import Head from "next/head";
 
-function index() {
+function Index() {
   const count = useSelector((state) => state.counter.value);
   const dispatch = useDispatch();
   return (
@@ -22,7 +22,7 @@ function index() {
       </Head>
       <Center height="100vh">
         <VStack spacing="15px">
-          <Image src="/redux.png" width="100px" height="100px" />
+          <Image src="/redux.png" alt="logo" width="100px" height="100px" />
           <Counter
             dispatch={dispatch}
             increment={increment}
@@ -41,4 +41,4 @@ function index() {
   );
 }
 
-export default index;
+export default Index;
